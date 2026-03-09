@@ -30,39 +30,192 @@
       }
     ]
   },
-  "work": [],
-  "education": [
+  "work": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "company": "深度赋智",
+      "position": "算法研究员（实习）",
+      "website": "",
+      "startDate": "2024-06",
+      "endDate": "2024-08",
+      "summary": "",
+      "highlights": [
+        "研究不同 LLM Agent Ensemble 策略在 Code Patch 生成上的性能，设计 ensemble 策略并通过筛选生成结果，效果提升 4%",
+        "研究不同 LLM Debate 策略在 Code Patch 生成上的性能",
+        "使用 mem0 实现 LLM Code Patch 生成过程记忆，优化 prompt 与记忆历史存储，Recall@5 从 60% 提升至 85.7%"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "company": "浙江清华长三角研究院",
+      "position": "NLP 算法实习生",
+      "website": "",
+      "startDate": "2024-04",
+      "endDate": "2024-05",
+      "summary": "",
+      "highlights": [
+        "使用 lm-evaluation-harness 评测、分析 LLM 在 C-eval 数据集上的性能，维护评测表并形成测试流程 SOP 文档，减少后续测试工作量",
+        "基于 Slurm 作业调度系统，在 Arm CPU + Nvidia GPU 平台打通 Deepspeed 多机多卡训练全流程并形成 SOP 文档"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "company": "阿里云智能",
+      "position": "学术合作实习生",
+      "website": "",
+      "startDate": "2023-08",
+      "endDate": "2024-04",
+      "summary": "",
+      "highlights": [
+        "预研大语言模型（LLM）、RAG 方法与微调技术，结合云网络业务挖掘可提升服务质量或解决业务困难的场景",
+        "基于 Qwen-Max、RAG 与微调设计解决方案，使用 LangChain 实现工具调用与定制，并设计向量检索方案（FAISS、text2-vec-large、multi-qa-MiniLM-L6-cos-v1）",
+        "基于 Gradio 搭建 Demo 服务，使用 Docker 部署与测试，汇总预研结果与 Demo 信息，撰写文档与 PPT 汇报"
+      ]
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "competitions": [
+    {
+      "name": "BetterSynth 多模态大模型数据合成挑战赛",
+      "award": "天池季军、最佳展示奖",
+      "rank": "4/1066",
+      "summary": "探究合成数据对多模态大模型训练的影响，并探索高效数据合成方法与策略。",
+      "highlights": [
+        "在 baseline 基础上评估 CLIP、BLIP 的数据筛选能力并量化训练影响",
+        "基于探索结果设计数据合成方案，较 baseline 效果提升 150%"
+      ]
+    },
+    {
+      "name": "BetterMixture 大模型数据混合挑战赛",
+      "award": "天池优胜奖",
+      "rank": "14/417",
+      "summary": "构建高质量数据混合与清洗流水线，提升训练数据质量。",
+      "highlights": [
+        "使用开源模型与正则表达式进行标注与筛选，保证高质量数据选取",
+        "对垃圾数据进行打标与过滤，确保数据清洁",
+        "采用 simhash、minhash 与语义相似度进行多粒度去重，从数百万条数据中筛选高质量数据",
+        "定向混入高数学得分且包含数学等式的数据，增强模型数学能力"
+      ]
+    },
+    {
+      "name": "首届明厨亮灶 AI 算法大赛",
+      "award": "天池分享奖",
+      "rank": "12/449",
+      "summary": "面向小样本多标签分类任务，完成数据增强、模型微调与推理加速。",
+      "highlights": [
+        "筛选高质量数据并进行数据增强，缓解小样本与多标签难点",
+        "微调 clip-vit-large-patch14 预训练模型，迭代优化参数提升性能",
+        "推理采用暴力裁剪、多物体识别与差帧法提取关键帧，并加入地板检测避免误判",
+        "通过并行推理与内存/显存管理优化，提升推理速度与资源利用率"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "东北大学",
+      "area": "计算机科学与技术",
+      "studyType": "硕士",
+      "startDate": "2022-09",
+      "endDate": "2025-06",
+      "gpa": null,
+      "courses": [],
+      "highlights": [
+        "班长"
+      ]
+    },
+    {
+      "institution": "东北大学",
+      "area": "物联网工程",
+      "studyType": "本科",
+      "startDate": "2018-09",
+      "endDate": "2022-06",
+      "gpa": null,
+      "courses": [],
+      "highlights": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "东北大学校长奖学金",
+      "date": "",
+      "awarder": "东北大学",
+      "summary": ""
+    },
+    {
+      "title": "东北大学一等学业奖学金（3 次）",
+      "date": "2022-2024",
+      "awarder": "东北大学",
+      "summary": ""
+    },
+    {
+      "title": "华为昇思 MindCon 个人赛二等奖",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    },
+    {
+      "title": "通义千问 AI 挑战赛 — Agent Builder 创意挑战赛 人气作品奖",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    },
+    {
+      "title": "天池 AICAS 2024 大挑战：优胜奖",
+      "date": "2024",
+      "awarder": "天池",
+      "summary": "通用算力大模型推理性能软硬协同优化挑战赛（17/218）"
+    }
+  ],
+  "skills": [
+    {
+      "name": "深度学习框架",
+      "keywords": [
+        "PyTorch",
+        "Transformer",
+        "CLIP/BLIP",
+        "CLIP 系列微调"
+      ]
+    },
+    {
+      "name": "大模型应用",
+      "keywords": [
+        "Agent（Ensemble、Debate）",
+        "Code Patch 生成",
+        "mem0 记忆增强",
+        "RAG",
+        "FAISS",
+        "向量检索与召回优化",
+        "LangChain"
+      ]
+    },
+    {
+      "name": "训练与工程",
+      "keywords": [
+        "DeepSpeed 多机多卡",
+        "Slurm",
+        "Arm CPU + Nvidia GPU",
+        "lm-evaluation-harness",
+        "C-Eval（SOP）",
+        "正则清洗/标注",
+        "simhash/minhash/语义去重",
+        "Gradio",
+        "Docker"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "CET-6"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sports",
+      "keywords": [
+        "长跑",
+        "乒乓球",
+        "徒步",
+        "羽毛球"
+      ]
+    }
+  ],
   "references": [],
   "publications": [
     {

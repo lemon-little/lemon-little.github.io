@@ -65,6 +65,11 @@ chmod -R 777 .
 docker compose up
 ```
 
+# Print Preview
+```
+bundle exec jekyll serve --livereload --host 127.0.0.1 --port 4000
+```
+
 You should now be able to access the website from `localhost:4000`.
 
 ### Using the DevContainer in VS Code

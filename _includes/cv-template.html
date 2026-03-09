@@ -1,20 +1,5 @@
 {% assign cv = site.data.cv %}
 
-<style>
-  .archive {
-    width: 80%;
-    margin: 0 auto;
-    float: none;
-    padding-right: 0;
-  }
-  
-  @media (min-width: 80em) {
-    .archive {
-      width: 70%;
-    }
-  }
-</style>
-
 <div class="cv-container">
   <!-- Basic Information -->
   <div class="cv-section cv-header">
@@ -140,6 +125,36 @@
     <h2>Work Experience</h2>
     <ul class="cv-list">
       {% for work in cv.work %}
+      <li class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">{{ work.position }}</div>
+          <div class="cv-item-date">{{ work.startDate }}{% if work.endDate %} - {{ work.endDate }}{% endif %}</div>
+        </div>
+        <div class="cv-item-content">
+          <div class="cv-item-subtitle">{{ work.company }}</div>
+          {% if work.summary %}
+          <div class="cv-item-detail">{{ work.summary }}</div>
+          {% endif %}
+          {% if work.highlights.size > 0 %}
+          <ul class="cv-highlights">
+            {% for highlight in work.highlights %}
+            <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if cv.internships and cv.internships.size > 0 %}
+  <!-- Internships -->
+  <div class="cv-section">
+    <h2>Internships</h2>
+    <ul class="cv-list">
+      {% for work in cv.internships %}
       <li class="cv-item">
         <div class="cv-item-header">
           <div class="cv-item-title">{{ work.position }}</div>

@@ -1,13 +1,15 @@
 ---
-layout: archive
+layout: cv-layout
 title: "CV"
 permalink: /cv/
-author_profile: true
+author_profile: false
 redirect_from:
   - /resume
 ---
 
 {% include base_path %}
+
+<div class="cv-md">
 
 Education
 ======
@@ -22,9 +24,13 @@ Honors and Awards
 * 通义千问 AI 挑战赛 — Agent Builder 创意挑战赛 人气作品奖
 * 天池 AICAS 2024 大挑战：通用算力大模型推理性能软硬协同优化挑战赛 优胜奖（17/218）
 
-Work experience
+Work Experience
 ======
 
+* 2025.07 - 至今    字节跳动 — 后端工程师
+
+Internships
+======
 * 2024.08 - 2025.06    浙江清华长三角研究院 — NLP 算法实习生
   * 使用 lm-evaluation-harness 评测、分析 LLM 在 C-eval 数据集上的性能，维护评测表并形成测试流程 SOP 文档，减少后续测试工作量
   * 基于 Slurm 作业调度系统，在 Arm CPU + Nvidia GPU 平台打通 Deepspeed 多机多卡训练全流程并形成 SOP 文档
@@ -84,9 +90,8 @@ Talks
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
-Teaching
-======
+
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+</div>

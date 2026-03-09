@@ -22,6 +22,9 @@ layout: compress
 
     <div id="main" role="main">
       <div class="container">
+        {% if page.title %}
+        <h1 class="page__title">{{ page.title }}</h1>
+        {% endif %}
         {{ content }}
       </div>
     </div>

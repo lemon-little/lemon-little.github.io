@@ -15,21 +15,21 @@
       </div>
       {% endif %}
       
-      {% if cv.basics.phone %}
+      {% if cv.basics.phone and cv.basics.phone != "" %}
       <div class="cv-contact-item">
         <i class="fas fa-phone"></i> {{ cv.basics.phone }}
       </div>
       {% endif %}
       
-      {% if cv.basics.website %}
+      {% if cv.basics.website and cv.basics.website != "" %}
       <div class="cv-contact-item">
         <i class="fas fa-globe"></i> <a href="{{ cv.basics.website }}" target="_blank">{{ cv.basics.website }}</a>
       </div>
       {% endif %}
       
-      {% if cv.basics.location.city %}
+      {% if cv.basics.location.city and cv.basics.location.city != "" %}
       <div class="cv-contact-item">
-        <i class="fas fa-map-marker-alt"></i> {{ cv.basics.location.city }}{% if cv.basics.location.region %}, {{ cv.basics.location.region }}{% endif %}{% if cv.basics.location.countryCode %}, {{ cv.basics.location.countryCode }}{% endif %}
+        <i class="fas fa-map-marker-alt"></i> {{ cv.basics.location.city }}{% if cv.basics.location.region and cv.basics.location.region != "" %}, {{ cv.basics.location.region }}{% endif %}{% if cv.basics.location.countryCode and cv.basics.location.countryCode != "" %}, {{ cv.basics.location.countryCode }}{% endif %}
       </div>
       {% endif %}
     </div>
@@ -106,10 +106,10 @@
           <div class="cv-item-date">{% if award.date %}{{ award.date }}{% endif %}</div>
         </div>
         <div class="cv-item-content">
-          {% if award.awarder %}
+          {% if award.awarder and award.awarder != "" %}
           <div class="cv-item-subtitle">{{ award.awarder }}</div>
           {% endif %}
-          {% if award.summary %}
+          {% if award.summary and award.summary != "" %}
           <div class="cv-item-detail">{{ award.summary }}</div>
           {% endif %}
         </div>
@@ -132,7 +132,7 @@
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ work.company }}</div>
-          {% if work.summary %}
+          {% if work.summary and work.summary != "" %}
           <div class="cv-item-detail">{{ work.summary }}</div>
           {% endif %}
           {% if work.highlights.size > 0 %}
@@ -162,7 +162,7 @@
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ work.company }}</div>
-          {% if work.summary %}
+          {% if work.summary and work.summary != "" %}
           <div class="cv-item-detail">{{ work.summary }}</div>
           {% endif %}
           {% if work.highlights.size > 0 %}

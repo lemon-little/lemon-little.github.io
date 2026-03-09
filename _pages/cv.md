@@ -2,14 +2,14 @@
 layout: cv-layout
 title: "CV"
 permalink: /cv/
-author_profile: false
+author_profile: true
 redirect_from:
   - /resume
 ---
 
 {% include base_path %}
 
-<div class="cv-md">
+<div class="cv-md" markdown="1">
 
 Education
 ======

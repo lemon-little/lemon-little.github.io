@@ -2,7 +2,7 @@
 layout: cv-layout
 title: "CV"
 permalink: /cv-json/
-author_profile: false
+author_profile: true
 redirect_from:
   - /resume-json
 ---
